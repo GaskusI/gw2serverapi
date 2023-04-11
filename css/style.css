@@ -1,0 +1,51 @@
+:root {
+    --server-full-bg: #8B0000;
+    --server-veryhigh-bg: #ff8c00;
+    --server-high-bg: #8B8000;
+    --server-medium-bg: #006400;
+    --server-low-bg: white;
+    --text-color: #fff;
+    --header-bg: #1a2b42;
+}
+
+.server-full {
+    background-color: var(--server-full-bg);
+    color: var(--text-color);
+}
+
+.server-veryhigh {
+    background-color: var(--server-veryhigh-bg);
+    color: var(--text-color);
+}
+
+.server-high {
+    background-color: var(--server-high-bg);
+    color: var(--text-color);
+}
+
+.server-medium {
+    background-color: var(--server-medium-bg);
+    color: var(--text-color);
+}
+
+.server-low {
+    background-color: var(--server-low-bg);
+    color: var(--text-color);
+}
+
+h2.text-center {
+    color: var(--text-color);
+    background-color: var(--header-bg);
+    padding: 10px;
+    margin-top: 30px;
+}
+
+table thead th {
+    background-color: var(--header-bg);
+    color: var(--text-color);
+}
+
+body {
+    background-color: #222;
+    color: var(--text-color);
+}

@@ -1,0 +1,47 @@
+{% include 'header.twig' %}
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="text-center">European Servers</h2>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Server name</th>
+                    <th>Population</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for Europe in Eu %}
+                    <tr class="server-{{ Europe.population|lower }}">
+                        <td>{{ Europe.name }}</td>
+                        <td>{{ Europe.population }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <h2 class="text-center">North American Servers</h2>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Server name</th>
+                    <th>Population</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for NorthAmerica in Na %}
+                    <tr class="server-{{ NorthAmerica.population|lower }}">
+                        <td>{{ NorthAmerica.name }}</td>
+                        <td>{{ NorthAmerica.population }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
